@@ -3,6 +3,8 @@
 A sample GraphQL Server built using [graphql-yoga](https://github.com/graphcool/graphql-yoga).  
 The sample shows how to implement queries, mutations, subscrptions as well as accessing headers.
 
+[**Live version**](https://secret-castle-94933.herokuapp.com/playground)
+
 ## Installation
 
 ```
