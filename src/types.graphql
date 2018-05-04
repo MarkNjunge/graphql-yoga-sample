@@ -1,0 +1,23 @@
+# Details on the number of greetings given
+type HelloCount {
+  # The total number of people that have been greeted
+  total: Int!
+  # The greeting
+  greeting: String!
+}
+
+type Query {
+  # Greets a user
+  hello(name: String): String! # User's name
+  # Returns data from a header
+  header(headerName: String!): String
+}
+
+type Mutation {
+  # Changes the value of the number of greetings
+  changeCount(value: Int = 0): Boolean
+}
+
+type Subscription {
+  helloSub: HelloCount!
+}
