@@ -20,6 +20,10 @@ const options = {
   playground: "/playground"
 };
 
+server.get("/", (req, res) => {
+  res.redirect("/playground");
+});
+
 server
   .start(options)
   .then(() => {
