@@ -22,15 +22,20 @@ The GraphQL endpoint will be `localhost:3000/graphql`
 
 ### Query
 
-```
+``` graphql
 query {
   hello(name:"Mark")
+}
+
+# Returns data from a header
+query {
+  header(headerName:"Authorization")
 }
 ```
 
 ### Mutation
 
-```
+``` graphql
 mutation {
   changeCount(value:10)
 }
@@ -38,7 +43,7 @@ mutation {
 
 ### Subscrption
 
-```
+``` graphql
 subscription {
   helloSub{
     total
